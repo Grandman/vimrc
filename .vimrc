@@ -1,7 +1,9 @@
-"Folding
+"Folding`
+set number
 set foldenable
-set foldmethod=indent
-set foldlevel=99
+set foldmethod=syntax
+"" Adjust the highlighting
+highlight Folded guibg=grey guifg=blue
 "For airline
 let g:airline#extensions#tabline#enabled = 1
 "For theme:
@@ -13,9 +15,8 @@ syntax enable
 colorscheme molokai
 let g:molokai_original = 1
 "let g:rehash256 = 1
-
+set wrap
 set nocompatible
-filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -32,7 +33,7 @@ set showmatch
 set hlsearch
 set incsearch
 set ignorecase
-
+let g:neocomplcache_enable_at_startup = 1
 " tabs:
 set ffs=unix,dos,mac
 set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
@@ -50,11 +51,16 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'bling/vim-airline.git'
 Plugin 'tpope/vim-fugitive.git' "for git
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
 
+
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 "neocomplcache:
+
 Plugin 'Shougo/neocomplcache.vim.git' "autocomplete
-let g:neocomplcache_enable_at_startup = 1 "for autocomplete
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+Plugin 'kongo2002/fsharp-vim.git'
 
 " color schemes:
 Plugin 'altercation/vim-colors-solarized.git'
@@ -67,6 +73,10 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'pangloss/vim-javascript'
 
 " Plugin 'javascript.vim'
-
-" Now we can turn our filetype functionality back on
-filetype plugin indent on
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'jiangmiao/auto-pairs'
+"Plugin 'tpope/vim-rails'
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
