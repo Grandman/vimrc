@@ -31,8 +31,7 @@ set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 " :PluginInstall -Installing plugins
 " :PluginList - lists configured plugins
 " :PluginUpdate or :PluginInstall! - to update
-Plugin 'gmarik/vundle'
-
+Plugin 'flazz/vim-colorschemes'
 " We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'bling/vim-airline.git'
