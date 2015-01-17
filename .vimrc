@@ -31,7 +31,6 @@ set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 " :PluginInstall -Installing plugins
 " :PluginList - lists configured plugins
 " :PluginUpdate or :PluginInstall! - to update
-Plugin 'flazz/vim-colorschemes'
 " We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'bling/vim-airline.git'
@@ -42,9 +41,6 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-
-" color schemes:
-Plugin 'altercation/vim-colors-solarized.git'
 
 " To get plugins from Vim Scripts, you can reference the plugin
 " by name as it appears on the site
