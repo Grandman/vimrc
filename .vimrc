@@ -1,20 +1,7 @@
-"Folding`
 set number
-set foldenable
-set foldmethod=syntax
-"" Adjust the highlighting
-highlight Folded guibg=grey guifg=blue
-"For airline
-let g:airline#extensions#tabline#enabled = 1
-"For theme:
 set t_Co=256
 syntax enable
-"colorscheme darkblue
-"-set background=dark
-"-colorscheme solarized
-colorscheme molokai
-let g:molokai_original = 1
-"let g:rehash256 = 1
+colorscheme mustang
 set wrap
 set nocompatible
 set rtp+=~/.vim/bundle/vundle/
@@ -33,7 +20,6 @@ set showmatch
 set hlsearch
 set incsearch
 set ignorecase
-let g:neocomplcache_enable_at_startup = 1
 " tabs:
 set ffs=unix,dos,mac
 set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
@@ -57,14 +43,9 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-"neocomplcache:
-
-Plugin 'Shougo/neocomplcache.vim.git' "autocomplete
-Plugin 'kongo2002/fsharp-vim.git'
 
 " color schemes:
 Plugin 'altercation/vim-colors-solarized.git'
-Plugin 'tomasr/molokai.git'
 
 " To get plugins from Vim Scripts, you can reference the plugin
 " by name as it appears on the site
@@ -80,3 +61,4 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+
